@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | default: site.github.repository_name }} | {{ site.github.owner_name }}</title>
+  {% if site.github.owner_name %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script>
+    var site_baseurl = '{{ '/' | relative_url }}'
+  </script>
+</head>
+<body>
+  <header id="site-header">
+    <div class="inner">
+      <nav id="site-nav">
+        <a href="{{ '/' | relative_url }}" id="home-link">Home</a>
+        <a href="/note/">Other Notes</a>
+      </nav>
+    </div>
+  </header>
+  <main id="site-main">
+    <article class="inner markdown-body">
+      <!-- <a href="http://yanxyz.net">Ivan Yan</a> 的笔记 -->
+      {{ content }}
+    </article>
+  </main>
+  <footer id="site-footer">
+    <div class="inner">
+      <p>Ivan Yan 的笔记，采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，<a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">编辑</a>。</p>
+    </div>
+  </footer>
+</body>
+</html>

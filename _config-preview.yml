@@ -1,0 +1,7 @@
+github: [metadata]
+description: ''
+baseurl: '/powershell' # 与 github.io 一致
+
+exclude:
+  - '*.sublime-*'
+  - Gemfile*

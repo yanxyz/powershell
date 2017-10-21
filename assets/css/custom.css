@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.inner {
+  max-width: 980px;
+  margin: auto;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    padding: 0 20px;
+  }
+}
+
+#site-header {
+  margin: 20px 0 40px;
+}
+
+#site-footer p {
+  margin-top: 10px;
+}
+
+#site-main {
+  margin-bottom: 40px;
+}
+
+#site-nav {
+  padding-bottom: 0.3em;
+  font-size: 1.25em;
+  border-bottom: 1px solid #eaecef;
+}
+
+#site-nav a {
+  margin-right: 20px;
+}
+
+#site-footer {
+  margin-top: auto;
+  font-size: 12px;
+}
+
+#site-footer > .inner {
+  border-top: 1px solid #eaecef;
+}
+
+.hidden {
+  display: none;
+}
+
+.obsolete {
+  color: #999;
+}
+
+/* code comments，中文斜体不方便阅读 */
+.highlight .c {
+  font-style: normal;
+}
