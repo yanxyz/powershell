@@ -1,0 +1,42 @@
+---
+---
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.obsolete {
+  color: #999;
+}
+
+#site-nav a {
+  margin-right: 20px;
+  @media (max-width: 980px) {
+    margin-right: 5px;
+  }
+}
+
+.octicon-link-external {
+  fill: currentColor;
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+// code comments，中文斜体不方便阅读
+.highlight .c {
+  font-style: normal;
+}
+
+#site-footer {
+  font-size: 12px;
+  margin-top: auto;
+}

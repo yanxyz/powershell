@@ -1,2 +1,6 @@
-include: ['_docs']
 title: 'PowerShell'
+permalink: pretty
+
+kramdown:
+  parse_block_html: true
+  toc_levels: '2,3,4'
